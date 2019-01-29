@@ -122,7 +122,7 @@ export default class extends PureComponent {
         const ScrollComponent = useAnimatedScrollView ? Animated.ScrollView : ScrollView;
 
         return (
-            <KeyboardAvoidingView behavior={isIOS ? 'padding' : null}>
+            <KeyboardAvoidingView behavior={'padding'}>
                 <View style={styles.wrap}>
                     <ScrollComponent ref={this._onRef}
                                      onFocus={this._onFocus}
